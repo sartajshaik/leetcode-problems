@@ -34,7 +34,7 @@ def binary_search(nums:list) -> bool:
   left, right = 0, len(nums)-1
 
   while left < right:
-    mid = int(left + (right - left)/2)
+    mid = left + (right - left)//2
     #print(mid)
     if nums[mid] > nums[right]:
       left = mid + 1
